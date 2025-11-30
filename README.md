@@ -7,10 +7,15 @@ The square tiling problem asks if it is possible to fill a K x K grid using give
 A valid input format look like this: 
 
 2
+
 3
+
 3
+
 1 1 1 1
+
 1 2 1 2
+
 2 1 2 1
 
 
@@ -19,6 +24,7 @@ Here, first line is the grid size, second is number of colors, third is list of 
 The task is to decide whether a proper tiling exists. If it does, an example of a proper tiling is the following in a 2 x 2 grid:
 
 0 0
+
 0 0
 
 
@@ -73,6 +79,7 @@ Command-line options:
 ## Experiments:
 
 Experiments were run on my machine using Ubuntu inside WSL2(Windows 11). All satisfiable and unsatisfiable small instances (2 x 2 and 3 x 3) were solved immediately. Even instances with grid size 8 or 10 were solved in less than a second. For the larger instance input-hard.in with grid size 35 the solving time on my machine was around 10 seconds. This instance was satisfiable mainly because for some tiles same colors were repeated on opposite sides or on all the sides. So in the resulting tiling the solver used mainly those tiles. 
+
 
 
 
